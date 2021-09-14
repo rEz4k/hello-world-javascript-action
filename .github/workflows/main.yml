@@ -12,7 +12,7 @@ jobs:
       id: hello
       uses: rEz4k/hello-world-javascript-action@v1.1
       with:
-        who-to-greet: 'Max the Octocat'
+        who-to-greet: 'the Octocat'
       # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
