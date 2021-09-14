@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: rEz4k/hello-world-javascript-action@latest
+      uses: rEz4k/hello-world-javascript-action@v1.2
       with:
         who-to-greet: 'the Octocat'
       # Use the output from the `hello` step
