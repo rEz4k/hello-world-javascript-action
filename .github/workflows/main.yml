@@ -1,8 +1,5 @@
 name: Poosh
-on: 
-  push:
-   branches:
-     - master
+on: [push]
     
 
 
