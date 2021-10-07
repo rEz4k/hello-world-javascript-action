@@ -19,10 +19,7 @@ jobs:
         echo "The time was "
      - name: Test
        run: |
-        echo Important stuff
-        echo ::group::Boring stuff
-        echo very
-        echo boring
-        echo stuff
-        echo ::endgroup::
-        echo Exciting stuff
+        echo ':Important stuff'
+        echo "::group::Boring stuff"
+        echo ':Important stuff1111'
+        echo "::endgroup::"
