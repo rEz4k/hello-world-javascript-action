@@ -4,22 +4,13 @@ on: [push]
 
 
 jobs:
-  hello_world_job:
-    name: A job to say hello
+  workflow-command-job:
     runs-on: ubuntu-latest
     steps:
-#      - name: Hello world action step
-#        id: hello
-#        uses: echo rEz4k/hello-world-javascript-action@v1.2
-#        with:
-#          who-to-greet: 'the Octocat'
-       # Use the output from the `hello` step
-     - name: Get the output time
-       run:
-        echo "The time was "
-     - name: Test
-       run: |
-        echo ':Important stuff'
-        echo "::groupBoring stuff"
-        echo ':Important stuff1111'
-        echo "::endgroup::"
+      - name: disable workflow commands
+        run: |
+          echo '::warning:: this is a warning'
+          echo "::stop-commands::`echo -n ${{ github.token }} | sha256sum | head -c 64`"
+          echo '::warning:: this will NOT be a warning'
+          echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
+          echo '::warning:: this is a warning again'
