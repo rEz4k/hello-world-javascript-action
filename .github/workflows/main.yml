@@ -14,9 +14,9 @@ jobs:
        with:
          who-to-greet: 'the Octocat'
        # Use the output from the `hello` step
-#      - name: Get the output time
-#        run:
-#         echo "The time was ${{ steps.hello.outputs.time }}"
+     - name: Get the output time
+       run:
+        echo "The time was "
      - name: Test
         echo "::group::My title"
         echo "122344"
