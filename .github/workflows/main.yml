@@ -20,6 +20,6 @@ jobs:
      - name: Test
        run: |
         echo ':Important stuff'
-        echo "::group::Boring stuff"
+        echo "::groupBoring stuff"
         echo ':Important stuff1111'
         echo "::endgroup::"
