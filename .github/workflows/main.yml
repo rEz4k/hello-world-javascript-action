@@ -16,7 +16,7 @@ jobs:
        # Use the output from the `hello` step
      - name: Get the output time
        run:
-        echo "::group::My title"
+        ::group::My title
         echo "The time was ${{ steps.hello.outputs.time }}"
-        echo "::endgroup::"
+        ::endgroup::
 
