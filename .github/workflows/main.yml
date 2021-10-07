@@ -10,9 +10,9 @@ jobs:
     steps:
      - name: Hello world action step
        id: hello
-       uses: echo rEz4k/hello-world-javascript-action@v1.2
-       with:
-         who-to-greet: 'the Octocat'
+#        uses: echo rEz4k/hello-world-javascript-action@v1.2
+#        with:
+#          who-to-greet: 'the Octocat'
        # Use the output from the `hello` step
      - name: Get the output time
        run:
