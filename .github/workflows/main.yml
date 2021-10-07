@@ -18,7 +18,7 @@ jobs:
        run:
         echo "The time was "
      - name: Test
-        echo "::group::My title"
-        echo "1223454"
-        echo "::endgroup::"
+            echo "::group::My title"
+            echo "1223454"
+            echo "::endgroup::"
 
