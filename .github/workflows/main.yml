@@ -18,6 +18,11 @@ jobs:
        run:
         echo "The time was "
      - name: Test
-       run:
-        echo ::group::"1223454"::endgroup::My title
-
+       run: |
+        echo Important stuff
+        echo ::group::Boring stuff
+        echo very
+        echo boring
+        echo stuff
+        echo ::endgroup::
+        echo Exciting stuff
