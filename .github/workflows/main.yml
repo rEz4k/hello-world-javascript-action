@@ -19,7 +19,5 @@ jobs:
         echo "The time was "
      - name: Test
        run:
-        ::group::My title
-        echo "1223454"
-        ::endgroup::My title
+        echo ::group::"1223454"::endgroup::My title
 
